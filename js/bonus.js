@@ -11,24 +11,24 @@ for (i = 1; i < 101; i++) {
 
         //stampa "FizzBuzz"
         console.log("FizzBuzz");
-        document.getElementById("fizz_buzz_list").innerHTML += "<li class=\"fizz_buzz\">FizzBuzz</li>";
+        document.getElementById("fizz_buzz_list").innerHTML += "<li><a href=\"#\"  class=\"fizz_buzz\">FizzBuzz</a></li>";
 
     //altrimenti, se è divisibile per 3 ma NON per 5, allora
     } else if ((i % 3 == 0) && (i % 5 != 0)) {
         //stampa solo "Fizz"
         console.log("Fizz");
-        document.getElementById("fizz_buzz_list").innerHTML += "<li class=\"fizz\">Fizz</li>";
+        document.getElementById("fizz_buzz_list").innerHTML += "<li><a href=\"#\" class=\"fizz\">Fizz</a></li>";
 
     //altriment, se NON è divisibile per 3 ma solo per 5, allora
     } else if ((i % 3 != 0) && (i % 5 == 0)) {
         //stampa solo "Buzz"
         console.log("Buzz");
-        document.getElementById("fizz_buzz_list").innerHTML += "<li class=\"buzz\">Buzz</li>";
+        document.getElementById("fizz_buzz_list").innerHTML += "<li><a href=\"#\" class=\"buzz\">Buzz</a></li>";
     //se non rientra in nessuna delle condizioni sopra, allora
     } else {
         //stampa il valore dell'indice
         console.log(i);
-        document.getElementById("fizz_buzz_list").innerHTML += "<li class=\"number\">"+i+"</li>";
+        document.getElementById("fizz_buzz_list").innerHTML += "<li><a href=\"#\" class=\"number\">"+i+"</a></li>";
     }
 }
 /* 
